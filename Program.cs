@@ -117,6 +117,36 @@ namespace G_NET_9_AdvC_01
             //Q7: What is the 'struct' constraint? Write an example.
             //==================================================
 
+
+            //Constraints restrict which types can be used as type arguments.
+            //This enables you to call specific methods on the type parameter.
+
+            // 'struct' constraint only allows T that is a value type (int, double, etc.)
+
+            // this class only allows value type variable like numbers
+            //public class PointProcessor<T> where T : struct
+            //{
+            //    private T x;
+            //    private T y;
+    
+            //    public PointProcessor(T x, T y)
+            //    {
+            //        this.x = x;
+            //        this.y = y;
+            //    }
+    
+            //    public T GetX() => x;
+            //    public T GetY() => y;
+    
+            //    public string GetCoordinates() => $"({x}, {y})";
+            //}
+
+            //var intPoint = new PointProcessor<int>(10, 20);
+
+            //var doublePoint = new PointProcessor<double>(3.14, 2.71);
+
+            //// this will throw an error (will not compile)
+            //var stringPoint = new PointProcessor<string>("a", "b"); // error: string is a reference type
             #endregion
 
             #region Question 08
@@ -211,5 +241,5 @@ namespace G_NET_9_AdvC_01
             #endregion
 
         }
-    }
+}
 }
