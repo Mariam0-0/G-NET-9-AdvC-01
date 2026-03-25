@@ -347,7 +347,7 @@ namespace G_NET_9_AdvC_01
             //==================================================
             //Q14: Write a SafeList<T> that returns default when the index is invalid.
             //==================================================
-            
+
             //public class SafeList<T>
             //{
             //    List<T> list = new List<T>();
@@ -368,6 +368,23 @@ namespace G_NET_9_AdvC_01
             //Q15: What is covariance? Explain the 'out' keyword.
             //==================================================
 
+            //Covariance allows you to use a more derived type than originally specified. Marked with out keyword. T can only appear in output positions.
+            // meaning that a derived type can be assigned to a base type
+
+            // here the T has to be int the return value not as a parameter for methods (out not in)
+            //public interface IProducer<out T>
+            //{
+            //    T Produce();  
+            //}
+
+            //// Dog is the base class
+            //class DogProducer : IProducer<Dog>
+            //{
+            //    public Dog Produce() => new Dog();
+            //}
+
+            //// here we can assign the derived type (Dog) to the base type (Animal)
+            //IProducer<Animal> animalProducer = new DogProducer();
             #endregion
 
             #region Question 16
