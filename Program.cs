@@ -24,6 +24,20 @@ namespace G_NET_9_AdvC_01
             //Q2: Write a generic class Container<T> with Add and Get methods.
             //==================================================
 
+            //internal class Container<T>
+            //{
+            //    private List<T> list = new List<T>();
+
+            //    public void Add(T item)
+            //    {
+            //        list.Add(item);
+            //    }
+
+            //    public T Get(int index) 
+            //    { 
+            //        return list[index];
+            //    }
+            //}
             #endregion
 
             #region Question 03
