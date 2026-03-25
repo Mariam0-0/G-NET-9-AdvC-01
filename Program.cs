@@ -82,6 +82,17 @@ namespace G_NET_9_AdvC_01
             //Q5: Write a generic method FindMax<T> that finds maximum value
             //==================================================
 
+            //public static T FindMax<T>(T x, T y) where T : IComparable<T>
+            //{
+            //    T max;
+            //    if(x.CompareTo(y) < 0)
+            //        max = y;
+            //    else
+            //        max = x;
+
+            //    return max;
+            //}
+
             #endregion
 
             #region Question 06
