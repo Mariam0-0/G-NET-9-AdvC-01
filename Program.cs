@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Numerics;
+using System.Reflection.Emit;
 
 namespace G_NET_9_AdvC_01
 {
@@ -45,6 +46,19 @@ namespace G_NET_9_AdvC_01
             //Q3:What are multiple type parameters? Write Pair<TKey, TValue>.
             //==================================================
 
+            // multiple type parameters are for when we want the generic class to deal with 2 or more different data types
+
+            //internal class Pair<TKey, TValue> 
+            //{
+            //    public TKey Key { get; set; }
+            //    public TValue Value { get; set; }
+
+            //    public Pair(TKey key, TValue value)
+            //    {
+            //        Key = key;
+            //        Value = value;
+            //    }
+            //}
             #endregion
 
             #region Question 04
