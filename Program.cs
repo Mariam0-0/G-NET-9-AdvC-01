@@ -347,6 +347,19 @@ namespace G_NET_9_AdvC_01
             //==================================================
             //Q14: Write a SafeList<T> that returns default when the index is invalid.
             //==================================================
+            
+            //public class SafeList<T>
+            //{
+            //    List<T> list = new List<T>();
+            //    public T GetItem(int indx)
+            //    {
+            //        if(indx < 0 || indx >= list.Count)
+            //        {
+            //            return default(T);
+            //        }
+            //        return list[indx];
+            //    }
+            //}
 
             #endregion
 
