@@ -460,6 +460,20 @@ namespace G_NET_9_AdvC_01
             //Q19: How can you inherit from a generic class?
             //==================================================
 
+            // there are 3 option
+            // 1 - child class generic inherits the generic class 
+
+            // public class Repository<T> { /* base */ }
+            //// Derived class is also generic
+            //public class CachedRepository<T> : Repository<T> { }
+
+            // 2 - child class in not generic and specifies T type when inheriting 
+            // public class UserRepository : Repository<User> { }
+
+            // 3 - child class is generic but adds more generic types than the base class
+
+            // child has more parameters than parent class
+            //public class KeyedRepository<TKey, TEntity> : Repository<TEntity> { }
             #endregion
 
             #region Question 20
