@@ -66,6 +66,15 @@ namespace G_NET_9_AdvC_01
             //Q4: What is a generic method? Write Swap<T> method.
             //==================================================
 
+            // A generic method declares its own type parameter(s).
+            // It can exist in both generic and non-generic classes. The compiler often infers the type argument.
+
+            //public static void Swap<T>(ref T x, ref T y)
+            //{
+            //    T temp = x;
+            //    x = y;
+            //    y = temp;
+            //}
             #endregion
 
             #region Question 05
