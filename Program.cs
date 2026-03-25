@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Diagnostics.Metrics;
 using System.Numerics;
 using System.Reflection.Emit;
 
@@ -425,13 +426,32 @@ namespace G_NET_9_AdvC_01
 
             // Contravariance(in) allows you to use a more general type where a more specific type is expected
             // ==> putting the base type in the derived type (consumer) (out keyword)
-            
+
             #endregion
 
             #region Question 18
             //==================================================
             //Q18: How do static members work in generic types?
             //==================================================
+
+            // in generic types each closed generic type has its own copy of static fields.
+            // List<int> and List<string> have separate static data
+
+            // EXAMPLE
+            //var a1 = new Counter<int>();      // Counter<int>.Count = 1
+            //var a2 = new Counter<int>();      // Counter<int>.Count = 2
+
+            //var b1 = new Counter<string>();   // Counter<string>.Count = 1
+
+            //var c1 = new Counter<double>();   // Counter<double>.Count = 1
+            //var c2 = new Counter<double>();   // Counter<double>.Count = 2
+
+            //var a1 = new Counter<int>();      // Counter<int>.Count = 3
+
+
+            //Console.WriteLine(Counter<int>.Count);    // 3
+            //Console.WriteLine(Counter<string>.Count); // 1
+            //Console.WriteLine(Counter<double>.Count); // 2
 
             #endregion
 
