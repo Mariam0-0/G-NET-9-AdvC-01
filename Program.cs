@@ -213,6 +213,39 @@ namespace G_NET_9_AdvC_01
             //Q10:  What is the interface constraint? Write an example.
             //==================================================
 
+            // where T : IInterface requires T to implement a specific interface. This enables calling interface methods on type parameter.
+
+            //public class Printer<T> where T : IPrintable
+            //{
+            //    public void Print(T item)
+            //    {
+            //        item.Print();
+            //    }
+            //}
+
+            //public interface IPrintable
+            //{
+            //    void Print();
+            //}
+
+            //public class Document : IPrintable
+            //{
+            //    public void Print() => Console.WriteLine("Printing document...");
+            //}
+
+            //public class Photo : IPrintable
+            //{
+            //    public void Print() => Console.WriteLine("Printing photo...");
+            //}
+
+            //var printer = new Printer<Document>();
+
+            //var photoPrinter = new Printer<Photo>();
+
+            //// this would not compile:
+            //public class NotPrintable { }
+            //var badPrinter = new Printer<NotPrintable>(); // Compile ERROR
+
             #endregion
 
             #region Question 11
@@ -286,5 +319,5 @@ namespace G_NET_9_AdvC_01
             #endregion
 
         }
-    }
+}
 }
