@@ -401,7 +401,7 @@ namespace G_NET_9_AdvC_01
             //public interface IConsumer<in T>
             //{
             //    void Consume(T item);  
-               
+
             //}
 
             //class AnimalFeeder : IConsumer<Animal>
@@ -420,6 +420,12 @@ namespace G_NET_9_AdvC_01
             //Q17: What is the difference between covariance and contravariance?
             //==================================================
 
+            // Covariance (out) allows you to use a more specific type where a more general type is expected
+            // ==> putting a derived type in the base type (producer) (in keyword)
+
+            // Contravariance(in) allows you to use a more general type where a more specific type is expected
+            // ==> putting the base type in the derived type (consumer) (out keyword)
+            
             #endregion
 
             #region Question 18
