@@ -100,6 +100,16 @@ namespace G_NET_9_AdvC_01
             //Q6: What is a generic interface? Write IRepository<T>.
             //==================================================
 
+            // Generic interfaces define contracts with type parameters. Classes implementing them specify the actual types.
+
+            //public interface IRepository<T> 
+            //{
+            //    T? GetById(int id);
+            //    IEnumerable<T> GetAll();
+            //    void Add(T entity);
+            //    void Update(T entity);
+            //    void Delete(int id);
+            //}
             #endregion
 
             #region Question 07
