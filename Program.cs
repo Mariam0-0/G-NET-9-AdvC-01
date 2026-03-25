@@ -128,16 +128,16 @@ namespace G_NET_9_AdvC_01
             //{
             //    private T x;
             //    private T y;
-    
+
             //    public PointProcessor(T x, T y)
             //    {
             //        this.x = x;
             //        this.y = y;
             //    }
-    
+
             //    public T GetX() => x;
             //    public T GetY() => y;
-    
+
             //    public string GetCoordinates() => $"({x}, {y})";
             //}
 
@@ -187,6 +187,25 @@ namespace G_NET_9_AdvC_01
             //Q9: What is the 'new()' constraint? Write an example.
             //==================================================
 
+            // where T : new() requires T to have a public parameterless constructor.
+            // This allows you to create instances of T inside the generic code.
+
+            //public class Factory<T> where T : new()
+            //{
+            //    public T Create()
+            //    {
+            //        return new T(); // can create instance because of new() constraint
+            //    }
+            //}
+
+            //public class Person
+            //{
+            //    public string Name { get; set; }
+            //}
+
+            //var personFactory = new Factory<Person>();
+            //var person = personFactory.Create();
+            //person.Name = "Mariam";
             #endregion
 
             #region Question 10
@@ -267,5 +286,5 @@ namespace G_NET_9_AdvC_01
             #endregion
 
         }
-}
+    }
 }
