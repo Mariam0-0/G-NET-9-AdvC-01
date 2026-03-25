@@ -154,6 +154,32 @@ namespace G_NET_9_AdvC_01
             //Q8: What is the 'class' constraint? Write an example.
             //==================================================
 
+            // 'class' constraint only allows reference types as T
+
+            //public class Cache<T> where T : class
+            //{
+            //    private T? _cachedItem;
+
+            //    public T? Get() => _cachedItem;
+
+            //    public void Set(T item)
+            //    {
+            //        _cachedItem = item;
+            //    }
+
+            //    public void Clear()
+            //    {
+            //        _cachedItem = null; 
+            //    }
+
+            //    public bool IsSame(T other)
+            //    {
+            //        return ReferenceEquals(_cachedItem, other);
+            //    }
+            //}
+
+            //var cache = new Cache<string>();  // works fine
+            //var invalidcache = new Cache<int>(); // ERROR
             #endregion
 
             #region Question 09
