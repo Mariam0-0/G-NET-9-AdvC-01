@@ -12,6 +12,11 @@ namespace G_NET_9_AdvC_01
             //Q1: What is a generic class? Why use generics?
             //==================================================
 
+            // Generics allow you to define type-safe classes, interfaces, methods, and delegates
+            // without committing to a specific data type until the code is used.
+
+            // Generics are used to avoid the problems of duplicating code or the boxing/unboxing of using an object
+            // so using generics was the solution to it with better performance, code reusability and type safety
             #endregion
 
             #region Question 02
