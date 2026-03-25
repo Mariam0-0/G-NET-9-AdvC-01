@@ -290,7 +290,7 @@ namespace G_NET_9_AdvC_01
             //var catProcessor = new AnimalProcessor<Cat>();
             //catProcessor.Process(new Cat()); 
 
-            
+
             //public class Car { }
             //var carProcessor = new Processor<Car>(); // Compile error
             #endregion
@@ -300,6 +300,38 @@ namespace G_NET_9_AdvC_01
             //Q12: How do you apply multiple constraints? Write an example.
             //==================================================
 
+            // you have to write them in order of what is the primary constraints and the rest will be secondary constraints 
+            
+            // in this example the 'class' constraint is the primary meaning that it has to be written first
+            // and the class must apply all constraints to avoid compile errors
+
+            //public class Manager<T> where T : class, IEmployee, new()
+            //{
+            //    public T CreateEmployee(string name)
+            //    {
+            //        var employee = new T();           
+            //        employee.Name = name;              
+            //        employee.HireDate = DateTime.Now;
+            //        return employee;                   
+            //    }
+
+            //    public void PrintInfo(T employee)
+            //    {
+            //        Console.WriteLine($"{employee.Name} - Hired: {employee.HireDate:d}");
+            //    }
+            //}
+            //public interface IEmployee
+            //{
+            //    string Name { get; set; }
+            //    DateTime HireDate { get; set; }
+            //}
+
+            //public class Developer : IEmployee
+            //{
+            //    public string Name { get; set; }
+            //    public DateTime HireDate { get; set; }
+
+            //}
             #endregion
 
             #region Question 13
@@ -358,6 +390,6 @@ namespace G_NET_9_AdvC_01
 
             #endregion
 
-        }
+    }
 }
 }
