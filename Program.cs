@@ -253,6 +253,46 @@ namespace G_NET_9_AdvC_01
             //Q11: What is the base class constraint? Write an example.
             //==================================================
 
+            // the base class constraint is where T must inherit from BaseClass
+            // meaning that T has to be a class that inherites the base class, like in this example
+            // we can use AnimalProcessor with objects that inherits from Animal class
+
+            //public class AnimalProcessor<T> where T : Animal
+            //{
+            //    public void Process(T animal)
+            //    {
+            //        animal.MakeSound();
+            //        animal.Eat();
+            //    }
+            //}
+
+            //public class Animal
+            //{
+            //    public virtual void MakeSound() => Console.WriteLine("Some sound");
+            //    public virtual void Eat() => Console.WriteLine("Eating...");
+            //}
+
+            //public class Dog : Animal
+            //{
+            //    public override void MakeSound() => Console.WriteLine("Woof!");
+            //    public override void Eat() => Console.WriteLine("Eating dog food...");
+            //}
+
+            //public class Cat : Animal
+            //{
+            //    public override void MakeSound() => Console.WriteLine("Meow!");
+            //    public override void Eat() => Console.WriteLine("Eating cat food...");
+            //}
+
+            //var dogProcessor = new AnimalProcessor<Dog>();
+            //dogProcessor.Process(new Dog()); 
+
+            //var catProcessor = new AnimalProcessor<Cat>();
+            //catProcessor.Process(new Cat()); 
+
+            
+            //public class Car { }
+            //var carProcessor = new Processor<Car>(); // Compile error
             #endregion
 
             #region Question 12
