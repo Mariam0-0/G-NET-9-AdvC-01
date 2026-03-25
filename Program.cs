@@ -392,6 +392,27 @@ namespace G_NET_9_AdvC_01
             //Q16: What is contravariance? Explain the 'in' keyword.
             //==================================================
 
+            // Contravariance allows you to use a less derived type than originally specified. Marked with in keyword. T can only appear in input positions.
+            // meaning that we can assign the base type to the derived type
+
+            // the T must appear in the input position only (as a parameter)
+            // we use 'in' keyword to apply contravariance
+
+            //public interface IConsumer<in T>
+            //{
+            //    void Consume(T item);  
+               
+            //}
+
+            //class AnimalFeeder : IConsumer<Animal>
+            //{
+            //    public void Consume(Animal a) => a.Eat();
+            //}
+
+            //// here we are assigning the Animal type (base) to a dog type (derived)
+            //IConsumer<Dog> dogFeeder = new AnimalFeeder();
+
+
             #endregion
 
             #region Question 17
