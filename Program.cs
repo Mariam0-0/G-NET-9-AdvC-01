@@ -301,7 +301,7 @@ namespace G_NET_9_AdvC_01
             //==================================================
 
             // you have to write them in order of what is the primary constraints and the rest will be secondary constraints 
-            
+
             // in this example the 'class' constraint is the primary meaning that it has to be written first
             // and the class must apply all constraints to avoid compile errors
 
@@ -339,6 +339,8 @@ namespace G_NET_9_AdvC_01
             //Q13: What does the 'default' keyword do in generics?
             //==================================================
 
+            // default(T) or default returns the default value for type T: null for reference types, 0/false for value types.
+            // so if a method return 'default' it will return 0 for int, false for bool, null fro string, etc.
             #endregion
 
             #region Question 14
@@ -390,6 +392,6 @@ namespace G_NET_9_AdvC_01
 
             #endregion
 
+        }
     }
-}
 }
